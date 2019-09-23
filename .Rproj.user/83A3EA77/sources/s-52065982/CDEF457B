@@ -5,16 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3147105245",
+    "hash" : "1889463475",
     "id" : "CDEF457B",
-    "lastKnownWriteTime" : 1569238459,
-    "last_content_update" : 1569238459967,
+    "lastKnownWriteTime" : 1569239707,
+    "last_content_update" : 1569239707618,
     "path" : "C:/CV/Ben.Krajacich/Ben.Krajacich.Rmd",
-    "project_path" : "Ben.Krajacich/Ben.Krajacich.Rmd",
+    "project_path" : null,
     "properties" : {
-        "cursorPosition" : "69,0",
-        "last_setup_crc32" : "CF7C858Af7b72466",
-        "scrollLine" : "67"
+        "cursorPosition" : "23,220",
+        "last_setup_crc32" : "",
+        "scrollLine" : "24"
     },
     "relative_order" : 3,
     "source_on_save" : false,

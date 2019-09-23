@@ -21,7 +21,7 @@ library(tidyverse)
 ```
 
 # Biography
-I am a vector ecologist and microbiologist who is broadly interested in medical entomology that never strays too far from natural systems. I have always had a focus on vector-borne disease, working initially with tick-born relapsing fever in soft ticks as a post-bac, my phd work was on the development of tools to study the use of ivermectin as a malaria control measure in West Africa (Senegal, Liberia, and Burkina Faso), and my post-doc work focuses on the dry-season persistence mechanisms of Anopheles spp. mosquitoes in Mali. 
+I am a vector ecologist and microbiologist who is broadly interested in medical entomology that never strays too far from natural systems. I have always had a focus on vector-borne disease, with my post-bac on tick-borne relapsing fever in soft ticks, my phd work was on the development of tools to study the use of ivermectin as a malaria control measure in West Africa (Senegal, Liberia, and Burkina Faso), and my post-doc work focuses on the dry-season persistence mechanisms of Anopheles spp. mosquitoes in Mali. 
 
 # Education
 
@@ -62,7 +62,7 @@ orcid_data %>%
 # Summary of Skills
 
 
-  *	Domestic and international field experience including work in French and English-speaking West Africa. Work involved entomological surveillance (aspiration catches, human landing catch, CDC light traps, larval collection, tick dragging), taxonomic identification, work with human volunteers, analysis and collection of human blood samples, and involvement in clinical trials (Ivermectin mass drug administration as an anti-malarial endectocide).
+  *	Domestic and international field experience including work in French and English-speaking West Africa. Involved entomological surveillance (aspiration catches, human landing catch, CDC light traps, larval collection, tick dragging), taxonomic identification, work with human volunteers, analysis and collection of human blood samples, and involvement in clinical trials (Ivermectin MDA as an anti-malarial endectocide).
   *	Extensive wet lab experience including PCR, RT-PCR, QT-NASBA, droplet digital PCR, next-generation sequencing, molecular cloning, generation of expression vectors, and generation of transgenic cell lines, including novel assay development for these approaches. Immunological techniques including western blotting, ELISA, immunohistochemistry, and vaccine production.
   *	Fluency in R, with extensive experiences in data manipulation/wrangling of complex data sets, GIS/mapping, analysis of next-generation sequencing data sets (16S microbiome/RNA-seq/WGS), machine learning, dashboard development for field projects with Shiny/REDcap, extraction of weather data for climatic data.
   *	Insect vector husbandry (rearing, maintenance, feeding experiments) including *Ornithodoros* soft ticks, and *Anopheles*, *Culex*, *Aedes* mosquitoes.
