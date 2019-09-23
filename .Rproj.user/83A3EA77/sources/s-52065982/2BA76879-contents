@@ -1,4 +1,0 @@
-#devtools::install_github("ropenscilabs/vitae")
-#install.packages('tinytex')
-#tinytex::install_tinytex()
-library('vitae')
