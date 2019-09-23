@@ -1,0 +1,1 @@
+{"frames":[],"message":"Error in bind_rows(orcid_educations(\"0000-0001-5769-8946\")$`0000-0001-5769-8946`$`affiliation-group`$summaries) : \n  could not find function \"bind_rows\"\n"}

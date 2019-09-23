@@ -1,0 +1,160 @@
+---
+name: Ben
+surname: Krajacich
+position: "Post-doctoral Researcher"
+address: "Rockville, MD"
+phone: 406 799 8383
+www: bkraj.netlify.com
+email: "bkrajacich@gmail.com"
+twitter: bkraj
+github: benkraj
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 414141
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(rorcid)
+library(tidyverse)
+```
+
+# Biography
+I am a vector ecologist and microbiologist who is broadly interested in medical entomology that never strays too far from natural systems. I have always had a focus on vector-borne disease, working initially with tick-born relapsing fever in soft ticks as a post-bac, my phd work was on the development of tools to study the use of ivermectin as a malaria control measure in West Africa (Senegal, Liberia, and Burkina Faso), and my post-doc work focuses on the dry-season persistence mechanisms of Anopheles spp. mosquitoes in Mali. 
+
+# Education
+
+```{r}
+orcid_data <- bind_rows(
+orcid_educations("0000-0001-5769-8946")$`0000-0001-5769-8946`$`affiliation-group`$summaries
+)
+
+orcid_data %>%
+  detailed_entries(
+    what = `education-summary.role-title`,
+    when = glue::glue("{`education-summary.start-date.year.value`} - {`education-summary.end-date.year.value`}"),
+    with = `education-summary.organization.name`,
+    where = `education-summary.organization.address.city`
+  )
+
+```
+
+# Employment
+
+```{r}
+orcid_data <- bind_rows(
+orcid_employments("0000-0001-5769-8946")$`0000-0001-5769-8946`$`affiliation-group`$summaries
+)
+
+orcid_data[1,30] <- "Present"
+
+orcid_data %>%
+  detailed_entries(
+    what = `employment-summary.role-title`,
+    when = glue::glue("{`employment-summary.start-date.year.value`} - {`employment-summary.end-date.year.value`}"),
+    with = `employment-summary.organization.name`,
+    where = `employment-summary.organization.address.city`
+  )
+
+```
+
+# Summary of Skills
+
+
+  *	Domestic and international field experience including work in French and English-speaking West Africa. Work involved entomological surveillance (aspiration catches, human landing catch, CDC light traps, larval collection, tick dragging), taxonomic identification, work with human volunteers, analysis and collection of human blood samples, and involvement in clinical trials (Ivermectin mass drug administration as an anti-malarial endectocide).
+  *	Extensive wet lab experience including PCR, RT-PCR, QT-NASBA, droplet digital PCR, next-generation sequencing, molecular cloning, generation of expression vectors, and generation of transgenic cell lines, including novel assay development for these approaches. Immunological techniques including western blotting, ELISA, immunohistochemistry, and vaccine production.
+  *	Fluency in R, with extensive experiences in data manipulation/wrangling of complex data sets, GIS/mapping, analysis of next-generation sequencing data sets (16S microbiome/RNA-seq/WGS), machine learning, dashboard development for field projects with Shiny/REDcap, extraction of weather data for climatic data.
+  *	Insect vector husbandry (rearing, maintenance, feeding experiments) including *Ornithodoros* soft ticks, and *Anopheles*, *Culex*, *Aedes* mosquitoes.
+  *	Training and experience in the use and handling of experimental laboratory mice, and a variety of wild animals. Experience in the collection of blood samples through various sites for serological testing.
+
+# Publications
+
+ * Huestis DL, Dao A, Diallo M, Sanogo ZL, Samake D, Yaro AS, Ousman Y, Linton Y-M, Krishna A, Veru L, **Krajacich BJ**, Faiman R, Florio J, Chapman JW, Reynolds DR, Weetman D, Mitchell R, Donnelly MJ, Talamas E, Chamorro L, Strobach E and Lehmann T. Windborne long-distance migration of malaria mosquitoes in the Sahel. Nature. In press. 2019.
+
+ * Faiman R, Dao A, Yaro AS, Diallo M, Djibril S, Sonogo ZL, Ousmane Y, Sullivan M, Veru L, **Krajacich BJ**, Krishna A, Matthews J, France CAM, Hamer G, Hobson KA, Lehmann T. Marking mosquitoes in their natural larval sites using 2H-enriched water: a promising approach for tracking over extended temporal and spatial scales. Methods in Ecology and Evolution. 2019. doi:10.1111/2041-210x.13210 
+
+ * **Krajacich BJ**, Huestis DL, Dao A, Yaro AS, Diallo M, Krishna A, Xu J, Lehmann T. Investigation of the Seasonal Microbiome of Anopheles coluzzii in Mali. PLOS ONE. 2018. 13(3): e0194899
+
+ * **Krajacich BJ**, Meyers JI, Alout H, Dabiré KR, Dowell FE, Foy BD. Validation of Near Infrared Spectroscopy for age-grading of wild Anopheles gambiae. Parasites and Vectors. 2017. 10:552
+
+ * Fauver, JR, Grubaugh ND, **Krajacich BJ**, Weger J, Fakoli LS, Bolay F, Diclaro J, Dabiré KR, Foy BD, Brackney D, Ebel GD, Stenglein M. West African Anopheles gambiae mosquitoes harbor a taxonomically diverse virome including new insect-specific flaviviruses, mononegaviruses, and totiviruses. 2016. 498:288-299
+
+ * **Krajacich BJ**, Lopez JE, Raffel SJ, Schwan TG. (2015). Vaccination with the variable tick protein of the relapsing fever spirochete Borrelia hermsii protects mice from infection by tick-bite. Parasites and Vectors. 2015;8(546). doi:10.1186/s13071-015-1170-1.
+
+ * Grubaugh ND, Sharma S, **Krajacich BJ**, Fakoli LS, Bolay FK, DiClaro JW, Johnson WE, Ebel GD, Foy BD, Brackney DE. (2015). Xenosurveillance: a novel mosquito-based approach for examining the human-pathogen landscape. PLoS Negl Trop Dis. 2015;9(3):e0003628. doi:10.1371/journal.pntd.0003628.
+
+ * **Krajacich BJ**, Slade JR, Mulligan RF, LaBrecque B, Alout H, Grubaugh ND, Meyers JI, Fakoli LS, Bolay FK, Brackney DE, Burton T A., Seaman J A., Diclaro JW, Dabire RK, Foy BD. (2015). Sampling Host-Seeking Anthropophilic Mosquito Vectors in West Africa: Comparisons of an Active Human-Baited Tent-Trap Against Gold Standard Methods. Am J Trop Med Hyg. 2015;92(2):415–421. doi:10.4269/ajtmh.14-0303.
+
+ * **Krajacich BJ**, Slade J.R., Mulligan R.F., LaBrecque B., Kobylinski K.C., Gray M., Kuklinski W.S., Burton T.A., Seaman J.A., Sylla M., Foy B.D. (2014). Design and Testing of a Novel, Protective Human-Baited Tent Trap for the Collection of Anthropophilic Disease Vectors. Journal of Medical Entomology. 51(1):253-263.
+
+ * Lopez J.E., McCoy B.N, **Krajacich BJ**, Schwan T.G. (2011). Acquisition and subsequent transmission of Borrelia hermsii by the soft tick, Ornithodoros hermsi. Journal of Medical Entomology. 48(4):891-895.
+
+
+# Presentations
+
+ * **Krajacich BJ**, Graber L, Faiman R, Sullivan M, Lehmann T. Extension of lifespan in Anopheles coluzzii mosquitoes by climatic modulation. American Society for Tropical Medicine and Hygiene Conference – 2018 – New Orleans, LA – Oral Presentation
+
+ * **Krajacich BJ**, Huestis DL, Dao A, Yaro AS, Diallo M, Krishna A, Xu J, Lehmann T. Investigation of the Seasonal Microbiome of Anopheles coluzzii in Mali. Entomological Society of America conference, 2017, Denver, CO.
+
+ * **Krajacich BJ**, Meyers J.I., Alout H., Dabiré R.K., Dowell F.E., Foy B.D., Validation of Near Infrared Spectroscopy for the age-grading of wild Anopheles gambiae. Oral Presentation at the JHMRI’s “The Future of Malaria Research” conference 2016, Rockville, MD.
+
+ * **Krajacich BJ**, Molina-Cruz A., Barillas-Mury C., Foy, B.D., Use of mosquito bloodmeals as epidemiological tools to study malaria transmission. Oral Presentation at 2016 CVMBS Research Day.
+
+ * **Krajacich BJ**, Molina-Cruz A., Grubaugh N.D., Brackney D.E., Alout H., Meyers J.I., Fakoli L.S., Bolay F.K., DiClaro J.W., Dabiré R.K., Barillas-Mury C., Foy, B.D., Development and utilization of molecular methods for the detection of Plasmodium falciparum in mosquito bloodmeals. 2015 Keystone Symposia Meeting – The Arthropod Vector: The Controller of Transmission.
+
+ * **Krajacich BJ**, Grubaugh ND, Brackney DE, Alout H, Meyers JI, Fakoli LS, Bolay FK, DiClaro JW, Dabiré RK, Foy BD. Detection of Plasmodium falciparum in the Bloodmeal of Anopheles gambiae using Quantitative Nucleic Acid Sequence Based Amplification (QT-NASBA). American Society for Tropical Medicine and Hygiene 63nd Annual Meeting 2014.
+
+ * **Krajacich BJ**, Slade J.R., Mulligan R.F., LaBrecque B., Kobylinski K.C., Gray M., Sylla M., Burton T.A., Kuklinski W.S., Seaman J.A., DiClaro J.W. II, Fakoli L.S. III, Dabiré R.K., Bolay F.K., Foy B.D. Demonstration and Analysis of a Safe, Novel, Human-baited Tent Trap for the Collection of Anthropophagic Disease Vectors. American Society for Tropical Medicine and Hygiene 62nd Annual Meeting 2013.
+ 
+ * **Krajacich BJ**, Slade J.R., Kobylinski K.C., Gray M., Burton T.A., Kuklinski W.S., Seaman J.A., Sylla M., Foy B.D. Demonstration and Analysis of a Safe, Novel, Human-baited Tent Trap for the Collection of Anthropophagic Disease Vectors. 2013 CMB/MCIN/BMB/MIP Spring Poster Symposium.
+ 
+ * **Krajacich BJ**, Bowden J.N., Gillespie, G.D.,Dratz, E.A., Seeking a Novel Screen for Disease: Fluorescence Lifetime Monitoring of Plasma Thermal Denaturation. 2008 MSU Student Research Celebration.
+**Krajacich BJ**, Slade J.R., Kobylinski K.C., Gray M., Burton T.A., Kuklinski W.S., Seaman J.A., Sylla M., Foy B.D. Demonstration and Analysis of a Safe, Novel, Human-baited Tent Trap for the Collection of Anthropophagic Disease Vectors. 2013 CVMBS Research Day.
+ 
+ * **Krajacich BJ**, Bowden J.N., Dratz, E.A., 2009.  Seeking a Novel Screen for Human Disease: A Foundation for Characterization of Albumin-Bound Lipids and Other Compounds in Human Blood Plasma. 2009 MSU Student Research Celebration.
+
+# Professional Memberships
+
+ * American Society for Tropical Medicine and Hygiene (ASTMH) – since 2011
+ 
+ * American Committee of Medical Entomology (ACME) – since 2011
+
+# Community Outreach and Service
+ 
+ * **Journal Referee**, Parasites and Vectors, Nature: Scientific Reports, Malaria Journal, PeerJ, PLOS Biology, PLOS ONE
+ 
+ * **Guest Community Scientist**, HB Woodlawn Secondary Program, Arlington, VA
+ 
+# Awards and Grants
+
+  * Summer 2018 – Awarded Travel Bursary to attend Wellcome Trust / Sanger Institute Genomic Epidemiology of Malaria conference in Hinxton, UK
+ * Supplemental Funding Request – FY2017 – National Institutes of Health  -  “Acquisition of the Thermo-Scientific KingFisher Flex Robot for High throughput DNA/RNA extraction” - $55,312.50  
+ * Fall 2016-Fall 2019 – Awarded Malaria Research Program Postdoctoral Fellowship
+ * Fall 2014 – Department of Microbiology, Immunology, and Pathology Travel Grant to attend the American Society for Tropical Medicine and Hygiene annual meeting. 
+ * Fall 2009 – Recipient of National Institutes of Health Post-Baccalaureate Intramural Research Training Award
+ * Fall 2008 – IdeA Network for Biomedical Research Excellence (INBRE) Program Grant
+ * Summer 2008 – Montana State University’s University Scholar’s Program Funding Grant
+ * Spring 2008 – IdeA Network for Biomedical Research Excellence (INBRE) Program Grant
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+"0","orcid_data <- bind_rows("
+"0","orcid_educations(""0000-0001-5769-8946"")$`0000-0001-5769-8946`$`affiliation-group`$summaries"
+"0",")"
+"2","Error in bind_rows(orcid_educations(""0000-0001-5769-8946"")$`0000-0001-5769-8946`$`affiliation-group`$summaries) : 
+  could not find function ""bind_rows""
+"
