@@ -1,0 +1,367 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Ben}{Krajacich}
+
+\position{Post-doctoral Researcher}
+\address{Rockville, MD}
+
+\mobile{406 799 8383}
+\email{\href{mailto:bkrajacich@gmail.com}{\nolinkurl{bkrajacich@gmail.com}}}
+\homepage{bkraj.netlify.com}
+\github{benkraj}
+\twitter{bkraj}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+% Templates for detailed entries
+% Arguments: what when with where why
+\usepackage{etoolbox}
+\def\detaileditem#1#2#3#4#5{%
+\cventry{#1}{#3}{#4}{#2}{\ifx#5\empty\else{\begin{cvitems}#5\end{cvitems}}\fi}\ifx#5\empty{\vspace{-4.0mm}}\else\fi}
+\def\detailedsection#1{\begin{cventries}#1\end{cventries}}
+
+% Templates for brief entries
+% Arguments: what when with
+\def\briefitem#1#2#3{\cvhonor{}{#1}{#3}{#2}}
+\def\briefsection#1{\begin{cvhonors}#1\end{cvhonors}}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {May 2020}
+    {Ben Krajacich~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{biography}{%
+\section{Biography}\label{biography}}
+
+I am a vector ecologist and microbiologist who is broadly interested in
+medical entomology that never strays too far from natural systems. I
+have always had a focus on vector-borne disease, with my post-bac on
+tick-borne relapsing fever in soft ticks, my phd work was on the
+development of tools to study the use of ivermectin as a malaria control
+measure in West Africa (Senegal, Liberia, and Burkina Faso), and my
+post-doc work focuses on the dry-season persistence mechanisms of
+Anopheles spp. mosquitoes in Mali.
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\detailedsection{\detaileditem{Ph.D. -  Advisor: Dr. Brian D. Foy  - Tools and Techniques for the Study and Evaluation of Malaria Control Measures in West Africa }{2011 - 2016}{Colorado State University}{Fort Collins, CO}{\empty}\detaileditem{BS - Advisor: Dr. Edward Dratz - Seeking a Novel Screen for Human Disease: A Foundation for Characterization of Albumin-Bound Lipids and Other Compounds in Human Blood Plasma}{2005 - 2009}{Montana State University}{Bozeman, MT}{\empty}}
+
+\hypertarget{employment}{%
+\section{Employment}\label{employment}}
+
+\detailedsection{\detaileditem{Malaria Research Program Postdoctoral Fellow - Advisor: Dr. Tovi Lehmann - Dry season persistence mechanisms of Anopheles coluzzii in Mali}{2016 - Present}{National Institutes of Health}{Rockville, MD}{\empty}\detaileditem{Graduate Teaching Assistant - Immunology Laboratory, Parasitology and Vector Biology}{2011 - 2012}{Colorado State University}{Fort Collins, CO}{\empty}\detaileditem{Post-Baccalaureate IRTA - Advisor: Dr. Tom Schwan - Development of a vaccine candidate against the Tick-Borne Relapsing Fever Agent Borrelia Hermsii  }{2009 - 2011}{National Institutes of Health}{Hamilton, MT}{\empty}}
+
+\hypertarget{summary-of-skills}{%
+\section{Summary of Skills}\label{summary-of-skills}}
+
+\begin{itemize}
+\tightlist
+\item
+  Domestic and international field experience including work in French
+  and English-speaking West Africa. Involved entomological surveillance
+  (aspiration catches, human landing catch, CDC light traps, larval
+  collection, tick dragging), taxonomic identification, work with human
+  volunteers, analysis and collection of human blood samples, and
+  involvement in clinical trials (Ivermectin MDA as an anti-malarial
+  endectocide).
+\item
+  Extensive wet lab experience including PCR, RT-PCR, QT-NASBA, droplet
+  digital PCR, next-generation sequencing, molecular cloning, generation
+  of expression vectors, and generation of transgenic cell lines,
+  including novel assay development for these approaches. Immunological
+  techniques including western blotting, ELISA, immunohistochemistry,
+  and vaccine production.
+\item
+  Fluency in R, with extensive experiences in data
+  manipulation/wrangling of complex data sets, GIS/mapping, analysis of
+  next-generation sequencing data sets (16S microbiome/RNA-seq/WGS),
+  machine learning, dashboard development for field projects with
+  Shiny/REDcap, extraction of weather data for climatic data.
+\item
+  Insect vector husbandry (rearing, maintenance, feeding experiments)
+  including \emph{Ornithodoros} soft ticks, and \emph{Anopheles},
+  \emph{Culex}, \emph{Aedes} mosquitoes.
+\item
+  Training and experience in the use and handling of experimental
+  laboratory mice, and a variety of wild animals. Experience in the
+  collection of blood samples through various sites for serological
+  testing.
+\end{itemize}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\begin{itemize}
+\item
+  Huestis DL, Dao A, Diallo M, Sanogo ZL, Samake D, Yaro AS, Ousman Y,
+  Linton Y-M, Krishna A, Veru L, \textbf{Krajacich BJ}, Faiman R, Florio
+  J, Chapman JW, Reynolds DR, Weetman D, Mitchell R, Donnelly MJ,
+  Talamas E, Chamorro L, Strobach E and Lehmann T. Windborne
+  long-distance migration of malaria mosquitoes in the Sahel. Nature. In
+  press. 2019.
+\item
+  Faiman R, Dao A, Yaro AS, Diallo M, Djibril S, Sonogo ZL, Ousmane Y,
+  Sullivan M, Veru L, \textbf{Krajacich BJ}, Krishna A, Matthews J,
+  France CAM, Hamer G, Hobson KA, Lehmann T. Marking mosquitoes in their
+  natural larval sites using 2H-enriched water: a promising approach for
+  tracking over extended temporal and spatial scales. Methods in Ecology
+  and Evolution. 2019. \url{doi:10.1111/2041-210x.13210}
+\item
+  \textbf{Krajacich BJ}, Huestis DL, Dao A, Yaro AS, Diallo M, Krishna
+  A, Xu J, Lehmann T. Investigation of the Seasonal Microbiome of
+  Anopheles coluzzii in Mali. PLOS ONE. 2018. 13(3): e0194899
+\item
+  \textbf{Krajacich BJ}, Meyers JI, Alout H, Dabiré KR, Dowell FE, Foy
+  BD. Validation of Near Infrared Spectroscopy for age-grading of wild
+  Anopheles gambiae. Parasites and Vectors. 2017. 10:552
+\item
+  Fauver, JR, Grubaugh ND, \textbf{Krajacich BJ}, Weger J, Fakoli LS,
+  Bolay F, Diclaro J, Dabiré KR, Foy BD, Brackney D, Ebel GD, Stenglein
+  M. West African Anopheles gambiae mosquitoes harbor a taxonomically
+  diverse virome including new insect-specific flaviviruses,
+  mononegaviruses, and totiviruses. 2016. 498:288-299
+\item
+  \textbf{Krajacich BJ}, Lopez JE, Raffel SJ, Schwan TG. (2015).
+  Vaccination with the variable tick protein of the relapsing fever
+  spirochete Borrelia hermsii protects mice from infection by tick-bite.
+  Parasites and Vectors. 2015;8(546).
+  \url{doi:10.1186/s13071-015-1170-1}.
+\item
+  Grubaugh ND, Sharma S, \textbf{Krajacich BJ}, Fakoli LS, Bolay FK,
+  DiClaro JW, Johnson WE, Ebel GD, Foy BD, Brackney DE. (2015).
+  Xenosurveillance: a novel mosquito-based approach for examining the
+  human-pathogen landscape. PLoS Negl Trop Dis. 2015;9(3):e0003628.
+  \url{doi:10.1371/journal.pntd.0003628}.
+\item
+  \textbf{Krajacich BJ}, Slade JR, Mulligan RF, LaBrecque B, Alout H,
+  Grubaugh ND, Meyers JI, Fakoli LS, Bolay FK, Brackney DE, Burton T A.,
+  Seaman J A., Diclaro JW, Dabire RK, Foy BD. (2015). Sampling
+  Host-Seeking Anthropophilic Mosquito Vectors in West Africa:
+  Comparisons of an Active Human-Baited Tent-Trap Against Gold Standard
+  Methods. Am J Trop Med Hyg. 2015;92(2):415--421.
+  \url{doi:10.4269/ajtmh.14-0303}.
+\item
+  \textbf{Krajacich BJ}, Slade J.R., Mulligan R.F., LaBrecque B.,
+  Kobylinski K.C., Gray M., Kuklinski W.S., Burton T.A., Seaman J.A.,
+  Sylla M., Foy B.D. (2014). Design and Testing of a Novel, Protective
+  Human-Baited Tent Trap for the Collection of Anthropophilic Disease
+  Vectors. Journal of Medical Entomology. 51(1):253-263.
+\item
+  Lopez J.E., McCoy B.N, \textbf{Krajacich BJ}, Schwan T.G. (2011).
+  Acquisition and subsequent transmission of Borrelia hermsii by the
+  soft tick, Ornithodoros hermsi. Journal of Medical Entomology.
+  48(4):891-895.
+\end{itemize}
+
+\hypertarget{presentations}{%
+\section{Presentations}\label{presentations}}
+
+\begin{itemize}
+\item
+  \textbf{Krajacich BJ}, Graber L, Faiman R, Sullivan M, Lehmann T.
+  Extension of lifespan in Anopheles coluzzii mosquitoes by climatic
+  modulation. American Society for Tropical Medicine and Hygiene
+  Conference -- 2018 -- New Orleans, LA -- Oral Presentation
+\item
+  \textbf{Krajacich BJ}, Huestis DL, Dao A, Yaro AS, Diallo M, Krishna
+  A, Xu J, Lehmann T. Investigation of the Seasonal Microbiome of
+  Anopheles coluzzii in Mali. Entomological Society of America
+  conference, 2017, Denver, CO.
+\item
+  \textbf{Krajacich BJ}, Meyers J.I., Alout H., Dabiré R.K., Dowell
+  F.E., Foy B.D., Validation of Near Infrared Spectroscopy for the
+  age-grading of wild Anopheles gambiae. Oral Presentation at the
+  JHMRI's ``The Future of Malaria Research'' conference 2016, Rockville,
+  MD.
+\item
+  \textbf{Krajacich BJ}, Molina-Cruz A., Barillas-Mury C., Foy, B.D.,
+  Use of mosquito bloodmeals as epidemiological tools to study malaria
+  transmission. Oral Presentation at 2016 CVMBS Research Day.
+\item
+  \textbf{Krajacich BJ}, Molina-Cruz A., Grubaugh N.D., Brackney D.E.,
+  Alout H., Meyers J.I., Fakoli L.S., Bolay F.K., DiClaro J.W., Dabiré
+  R.K., Barillas-Mury C., Foy, B.D., Development and utilization of
+  molecular methods for the detection of Plasmodium falciparum in
+  mosquito bloodmeals. 2015 Keystone Symposia Meeting -- The Arthropod
+  Vector: The Controller of Transmission.
+\item
+  \textbf{Krajacich BJ}, Grubaugh ND, Brackney DE, Alout H, Meyers JI,
+  Fakoli LS, Bolay FK, DiClaro JW, Dabiré RK, Foy BD. Detection of
+  Plasmodium falciparum in the Bloodmeal of Anopheles gambiae using
+  Quantitative Nucleic Acid Sequence Based Amplification (QT-NASBA).
+  American Society for Tropical Medicine and Hygiene 63nd Annual Meeting
+  2014.
+\item
+  \textbf{Krajacich BJ}, Slade J.R., Mulligan R.F., LaBrecque B.,
+  Kobylinski K.C., Gray M., Sylla M., Burton T.A., Kuklinski W.S.,
+  Seaman J.A., DiClaro J.W. II, Fakoli L.S. III, Dabiré R.K., Bolay
+  F.K., Foy B.D. Demonstration and Analysis of a Safe, Novel,
+  Human-baited Tent Trap for the Collection of Anthropophagic Disease
+  Vectors. American Society for Tropical Medicine and Hygiene 62nd
+  Annual Meeting 2013.
+\item
+  \textbf{Krajacich BJ}, Slade J.R., Kobylinski K.C., Gray M., Burton
+  T.A., Kuklinski W.S., Seaman J.A., Sylla M., Foy B.D. Demonstration
+  and Analysis of a Safe, Novel, Human-baited Tent Trap for the
+  Collection of Anthropophagic Disease Vectors. 2013 CMB/MCIN/BMB/MIP
+  Spring Poster Symposium.
+\item
+  \textbf{Krajacich BJ}, Bowden J.N., Gillespie, G.D.,Dratz, E.A.,
+  Seeking a Novel Screen for Disease: Fluorescence Lifetime Monitoring
+  of Plasma Thermal Denaturation. 2008 MSU Student Research Celebration.
+  \textbf{Krajacich BJ}, Slade J.R., Kobylinski K.C., Gray M., Burton
+  T.A., Kuklinski W.S., Seaman J.A., Sylla M., Foy B.D. Demonstration
+  and Analysis of a Safe, Novel, Human-baited Tent Trap for the
+  Collection of Anthropophagic Disease Vectors. 2013 CVMBS Research Day.
+\item
+  \textbf{Krajacich BJ}, Bowden J.N., Dratz, E.A., 2009. Seeking a Novel
+  Screen for Human Disease: A Foundation for Characterization of
+  Albumin-Bound Lipids and Other Compounds in Human Blood Plasma. 2009
+  MSU Student Research Celebration.
+\end{itemize}
+
+\hypertarget{professional-memberships}{%
+\section{Professional Memberships}\label{professional-memberships}}
+
+\begin{itemize}
+\item
+  American Society for Tropical Medicine and Hygiene (ASTMH) -- since
+  2011
+\item
+  American Committee of Medical Entomology (ACME) -- since 2011
+\end{itemize}
+
+\hypertarget{community-outreach-and-service}{%
+\section{Community Outreach and
+Service}\label{community-outreach-and-service}}
+
+\begin{itemize}
+\item
+  \textbf{Journal Referee}, Parasites and Vectors, Nature: Scientific
+  Reports, Malaria Journal, PeerJ, PLOS Biology, PLOS ONE
+\item
+  \textbf{Guest Community Scientist}, HB Woodlawn Secondary Program,
+  Arlington, VA
+\end{itemize}
+
+\hypertarget{awards-and-grants}{%
+\section{Awards and Grants}\label{awards-and-grants}}
+
+\begin{itemize}
+\tightlist
+\item
+  Summer 2018 -- Awarded Travel Bursary to attend Wellcome Trust /
+  Sanger Institute Genomic Epidemiology of Malaria conference in
+  Hinxton, UK
+\item
+  Supplemental Funding Request -- FY2017 -- National Institutes of
+  Health - ``Acquisition of the Thermo-Scientific KingFisher Flex Robot
+  for High throughput DNA/RNA extraction'' - \$55,312.50
+\item
+  Fall 2016-Fall 2019 -- Awarded Malaria Research Program Postdoctoral
+  Fellowship
+\item
+  Fall 2014 -- Department of Microbiology, Immunology, and Pathology
+  Travel Grant to attend the American Society for Tropical Medicine and
+  Hygiene annual meeting.
+\item
+  Fall 2009 -- Recipient of National Institutes of Health
+  Post-Baccalaureate Intramural Research Training Award
+\item
+  Fall 2008 -- IdeA Network for Biomedical Research Excellence (INBRE)
+  Program Grant
+\item
+  Summer 2008 -- Montana State University's University Scholar's Program
+  Funding Grant
+\item
+  Spring 2008 -- IdeA Network for Biomedical Research Excellence (INBRE)
+  Program Grant
+\end{itemize}
+
+\end{document}

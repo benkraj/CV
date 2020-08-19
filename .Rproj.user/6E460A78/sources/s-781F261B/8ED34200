@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589309979702.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8ED34200",
+    "lastKnownWriteTime" : 1589310543,
+    "last_content_update" : 1589310543,
+    "path" : "C:/Users/bkraj/Google Drive/NIH/CV/Untitled/Untitled.Rmd",
+    "project_path" : "Untitled/Untitled.Rmd",
+    "properties" : {
+        "cursorPosition" : "27,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

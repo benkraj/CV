@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589391928916.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3278250114",
+    "id" : "DD8F6589",
+    "lastKnownWriteTime" : 1589391928,
+    "last_content_update" : 1589391928,
+    "path" : "C:/Users/bkraj/Google Drive/NIH/CV/test/test.Rmd",
+    "project_path" : "test/test.Rmd",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589300057718.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5BC35CCB",
+    "lastKnownWriteTime" : 1589305140,
+    "last_content_update" : 1589305140,
+    "path" : "C:/Users/bkraj/Google Drive/NIH/CV/Ben.Krajacich.Rmd",
+    "project_path" : "Ben.Krajacich.Rmd",
+    "properties" : {
+        "cursorPosition" : "23,32",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -5,15 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1624931854",
+    "hash" : "1806250491",
     "id" : "72929FBB",
-    "lastKnownWriteTime" : 1569240746,
-    "last_content_update" : 1569240746158,
-    "path" : "C:/OneDrive/OneDrive - National Institutes of Health/CV/Ben.Krajacich.Rmd",
-    "project_path" : "Ben.Krajacich.Rmd",
+    "lastKnownWriteTime" : 1583854901,
+    "last_content_update" : 1583854901766,
+    "path" : "C:/OneDrive/OneDrive - National Institutes of Health/CV/Ben.Krajacich.edits.Rmd",
+    "project_path" : "Ben.Krajacich.edits.Rmd",
     "properties" : {
-        "cursorPosition" : "132,1",
-        "scrollLine" : "125"
+        "cursorPosition" : "74,421",
+        "scrollLine" : "69",
+        "source_window_id" : ""
     },
     "relative_order" : 1,
     "source_on_save" : false,
